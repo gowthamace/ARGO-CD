@@ -1,14 +1,14 @@
 wezvabackendapp:
   wezvabackendapp:
     image:
-      image: 081654307023.dkr.ecr.ap-south-1.amazonaws.comwezvatechbackend
-      tag: fb15
+      repository: 215939710854.dkr.ecr.ap-south-1.amazonaws.com/backend
+      tag: fb22
 backendSvc:
   ports:
-  - nodePort: 30000
-    port: 8080
-    protocol: TCP
-    targetPort: 8080
+    - nodePort: 30001
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
 mysqlCreds:
   database: "mywezvadb"
   password: "password"
